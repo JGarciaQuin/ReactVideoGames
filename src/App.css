@@ -1,38 +1,113 @@
-.App {
-  text-align: center;
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar-container {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    transition: 0.3s;
+    position: absolute;
+    z-index: 99;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar-logo {
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    font-weight: 2rem;
+    color: white;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.navbar {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
 }
 
-.App-link {
-  color: #61dafb;
+.items {
+    padding: 1rem 2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.items a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+.items:hover a {
+    color: brown;
+}
+
+.navbarsticky {
+    width: 100%;
+    height: 4rem;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    position: fixed;
+    transition: 0.3s cubic-bezier(1, 0, 0, 1);
+    z-index: 99;
+}
+
+.services-container {
+    width: 100%;
+    height: 40vh;
+    background-color: white;
+}
+
+/*slider*/
+
+h1 {
+    text-align: center;
+    font-size: 5vw;
+}
+
+[type=radio] {
+    display: none;
+}
+
+#slider {
+    height: 35vw;
+    position: relative;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+
+#slider label {
+    margin: auto;
+    width: 60%;
+    height: 100%;
+    border-radius: 4px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    cursor: pointer;
+    transition: all 0.4s ease-in;
+}
+
+#s1:checked ~ #slider4, #s2:checked ~ #slider5,
+#s3:checked ~ #slider1, #s4:checked ~ #slider2,
+#s5:checked ~ #slider3 {
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.37);
+    transform: translate3d(-30%, 0, -200px);
+}
+
+#s1:checked ~ #slider5, #s2:checked ~ #slider1,
+#s3:checked ~ #slider2, #s4:checked ~ #slider3,
+#s5:checked ~ #slider4 {
+    box-shadow: 0 10px 20px 0 rgba(255, 255, 255, 0.1
+    ), 0 10px 20px 0 rgba(0, 0, 0, .8);
+    transform: translate3d(-15%, 0, -100px);
 }
