@@ -4,7 +4,7 @@ export const SliderApp = () => {
   return (
       <>
     <div>
-        <h1>Juegos</h1>
+        <h1>Juegos Melos</h1>
         <br/>
         <section id='slider'>
             <input type="radio" name='slider' id='s1'/>
