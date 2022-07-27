@@ -1,42 +1,22 @@
 import React from 'react'
-import Icono from './Icono1.png'
+import Icono from './st.png'
 
 
 export const NavbarApp = () => {
   return (
       <>
-    <div>
-        <div className="container">
-           <div id='mynavbar' className="navbar-container">
-                <div className="navbar-logo">
-                    <img src={Icono} alt="Icono" />
-                </div>
-                <div className='navbar'>
-                    <div className='items'>
-                        <a href="#">Home</a>
-                    </div>
-                    <div className='items'>
-                        <a href="#">Lista</a>
-                    </div>
-                    <div className='items'>
-                        <a href="#">Games</a>
-                    </div>
-                    <div className='items'>
-                        <a href="#">Info</a>
-                    </div>
-                    <div className='items'>
-                        <a href="#">Contacto</a>
-                    </div>
-                </div>
-
-           </div>  
-       </div>
-       
-           <div className="services-conatiner">
-
-           </div>
+    <div className='primera'>
+    <header className='nav center'>
+        <img src={Icono} alt="Icono" className='logo' />
+        <input type="checkbox" name='' className='checkBtn' />
+        <ol className='center'>
+            <a href="#"><li>Home</li></a>
+            <a href="#"><li>Games</li></a>
+            <a href="#"><li>Shop</li></a>
+            <a href="#"><li>About</li></a>
+        </ol>
+    </header>
     </div>
-
     </>
   )
 }
