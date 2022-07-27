@@ -1,14 +1,21 @@
 import React from 'react'
-import '../cards/cards.css'
-import Black from '../assets/black.jpg'
+import CardsApp from 'Cards/CardsApp';
+import Black from '../assets/black.jpg';
+import Pes from '../assets/Pes.jpg';
+import Mdh from '../assets/mdh.jpg';
 
 
 
-export const CardsApp = (props) => {
+
+
+ const CardsApp = (props) => {
   return (
-    
     <>
     <div className='todo'>
+        <div>
+            <center><img src={Tituloc} alt="tituloc" /></center>
+        </div>
+
         <div className='cards-body'>
             <div className='wrapper'>
                 <div className='card'>
@@ -27,3 +34,5 @@ export const CardsApp = (props) => {
     </>
   )
 }
+
+export default CardsApp

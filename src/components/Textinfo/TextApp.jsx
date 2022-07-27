@@ -1,6 +1,7 @@
 import React from 'react'
 import Titulo from './titulo1.png'
 import img1 from './pv.jpg'
+import Tituloc from '../cards/clas.png'
 
 
 
@@ -21,6 +22,10 @@ export const TextApp = () => {
                  que se ejecutaba sobre la EDSAC y permitía enfrentar a un jugador humano contra la máquina.</p>
         </div>
     </div>
+
+    <div>
+            <center><img src={Tituloc} alt="tituloc" /></center>
+        </div>
     </div>
     </>
   )
